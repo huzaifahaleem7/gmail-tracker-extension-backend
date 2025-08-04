@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 //import tracking routes
-import trackingRoutes from "./routes/trackingRoutes.js";
-app.use("/api/tracking", trackingRoutes);
+import trackingRoutes from "./routes/email.route.js";
+app.use("/api/email", trackingRoutes);
 
 export default app;
