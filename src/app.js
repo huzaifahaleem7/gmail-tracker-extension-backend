@@ -20,4 +20,8 @@ app.use(express.static("public"));
 import trackingRoutes from "./routes/email.route.js";
 app.use("/api/v1/email", trackingRoutes);
 
+app.get("/", (_, res) => {
+  res.send("✅ Gmail Email Tracker Backend is Running!");
+});
+
 export default app;
